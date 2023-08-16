@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="" id="input" value="" placeholder="0">
+        <div>
+            <button class="operator" onclick="input.value = '' ">AC</button>
+            <button class="operator" onclick="input.value = input.value.toString().slice(0,-1)">DEL</button>
+            <button class="operator" onclick="input.value += '%' ">%</button>
+            <button class="operator" onclick="input.value += '/' ">/</button>
+        </div>
+        <div>
+            <button onclick="input.value += '7' ">7</button>
+            <button onclick="input.value += '8' ">8</button>
+            <button onclick="input.value += '9' ">9</button>
+            <button class="operator" onclick="input.value += '*' ">*</button>
+        </div>
+        <div>
+            <button onclick="input.value += '4' ">4</button>
+            <button onclick="input.value += '5' ">5</button>
+            <button onclick="input.value += '6' ">6</button>
+            <button class="operator" onclick="input.value += '-' ">-</button>
+        </div>
+        <div>
+            <button onclick="input.value += '1' ">1</button>
+            <button onclick="input.value += '2' ">2</button>
+            <button onclick="input.value += '3' ">3</button>
+            <button class="operator" onclick="input.value += '+' ">+</button>
+        </div>
+        <div>
+            <button onclick="input.value += '00' ">00</button>
+            <button onclick="input.value += '0' ">0</button>
+            <button class="operator" onclick="input.value += '.' ">.</button>
+            <button class="equalbtn" onclick="input.value = eval(input.value) ">=</button>
+        </div>
+    </div>
+</body>
+</html>
